@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="51dp"
+    android:paddingTop="24dp"
+    android:background="@drawable/bottom_sheet_dialog"
+    tools:context=".CreateTaskData">
+
+    <EditText
+        android:id="@+id/et_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rentagle_buttom"
+        android:hint="task"
+        android:singleLine="true"
+        android:padding="12dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="14dp"
+            android:layout_weight="1"
+            android:background="@drawable/rentagle_buttom"
+            android:drawableEnd="@drawable/ic_calendar"
+            android:paddingEnd="4dp"
+            android:text="19.08.2022" />
+
+        <Button
+            android:id="@+id/btn_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/rentagle_buttom"
+            android:drawableEnd="@drawable/ic_down"
+            android:paddingEnd="4dp"
+            android:textAllCaps="false"
+            android:text="Каждый день" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="26dp"
+        android:backgroundTint="@color/purple"
+        android:text="Принять"
+        android:textColor="@color/white" />
+</LinearLayout>

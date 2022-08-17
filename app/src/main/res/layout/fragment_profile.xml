@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="71dp"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:src="@drawable/rentagle_profile_avatar"/>
+
+    <LinearLayout
+        android:layout_marginTop="21dp"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginHorizontal="6dp"
+        android:background="@drawable/rentagle_profile"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nameEditext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="19sp"
+            android:paddingTop="12sp"
+            android:hint="Ник"
+            android:textSize="14dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Meka"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:paddingStart="19sp"
+            android:paddingTop="12sp"/>
+
+        <TextView
+            android:id="@+id/zadachEditext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="19sp"
+            android:paddingTop="12sp"
+            android:hint="Количество задач"
+            android:textSize="14dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="16"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:inputType="number"
+            android:paddingStart="19sp"
+            android:paddingTop="12sp"/>
+
+        <TextView
+            android:id="@+id/passEditext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="19sp"
+            android:paddingTop="12sp"
+            android:hint="Пароль"
+            android:textSize="14dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My password"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:paddingStart="19sp"
+            android:paddingTop="12sp"/>
+
+
+
+    </LinearLayout>
+</LinearLayout>
