@@ -1,10 +1,13 @@
-package com.example.lifetrack
+package com.example.lifetrack.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.lifetrack.databinding.ActivityMainBinding.inflate
+import com.example.lifetrack.room.OnBoardingModel
+import com.example.lifetrack.OnItemClicker
 import com.example.lifetrack.databinding.ItemOnBoardingBinding
+
+
 
 class OnBoardingAdapter(private val list: ArrayList<OnBoardingModel>, val listener: OnItemClicker) :
     RecyclerView.Adapter<OnBoardingAdapter.OnBoardingViewHolder>() {
@@ -37,14 +40,11 @@ class OnBoardingAdapter(private val list: ArrayList<OnBoardingModel>, val listen
                 binding.btnNext.setOnClickListener {
                     listener.onClick()
                 }
+            } else binding.btnNext.setOnClickListener {
+                listener.onClickNext()
             }
-            else
-                binding.btnNext.setOnClickListener {
-                    listener.onClickNext()
-                }
         }
     }
 }
-
 
 

@@ -13,10 +13,14 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.lifetrack.databinding.ActivityMainBinding
 
+
+
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
+    var int: Int? = null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         requestWindowFeature(Window.FEATURE_NO_TITLE)
@@ -35,11 +39,11 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
 
         binding.ivToolbarIcon.setOnClickListener {
-            if (binding.toolbar.title == "Профиль"){
-                findNavController(R.id.nav_host_fragment).navigate(R.id.homeFragment)
-                binding.ivToolbarIcon.setImageResource(R.drawable.ic_person)
-            }else findNavController(R.id.nav_host_fragment).navigate(R.id.profileFragment)
-            binding.ivToolbarIcon.setImageResource(R.drawable.img)
+
+
+            findNavController(R.id.nav_host_fragment).navigate(R.id.profileFragment)
+            binding.ivToolbarIcon.setImageResource(R.drawable.ic_person)
+
         }
 
 

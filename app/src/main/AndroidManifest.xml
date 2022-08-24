@@ -4,6 +4,7 @@
     package="com.example.lifetrack">
 
     <application
+        android:name=".room.App"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"

@@ -1,4 +1,4 @@
-package com.example.lifetrack
+package com.example.lifetrack.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.setFragmentResult
 import com.example.lifetrack.databinding.FragmentDatePickerBinding
+
 
 class DatePickerFragment : DialogFragment(){
     private lateinit var binding: FragmentDatePickerBinding
@@ -40,3 +41,5 @@ class DatePickerFragment : DialogFragment(){
 
 
 }
+
+

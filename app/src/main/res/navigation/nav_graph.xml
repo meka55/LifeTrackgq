@@ -7,19 +7,19 @@ app:startDestination="@id/onBoardingFragment">
 
 <fragment
     android:id="@+id/homeFragment"
-    android:name="com.example.lifetrack.HomeFragment"
+    android:name="com.example.lifetrack.ui.HomeFragment"
     android:label="Заметки"
     tools:layout="@layout/fragment_home"/>
 
 <fragment
     android:id="@+id/profileFragment"
-    android:name="com.example.lifetrack.ProfileFragment"
+    android:name="com.example.lifetrack.ui.ProfileFragment"
     android:label="Профиль"
     tools:layout="@layout/fragment_profile" />
 
 <fragment
     android:id="@+id/onBoardingFragment"
-    android:name="com.example.lifetrack.OnBoardingFragment"
+    android:name="com.example.lifetrack.ui.OnBoardingFragment"
     android:label="fragment_on_boarding"
     tools:layout="@layout/fragment_on_boarding">
     <action

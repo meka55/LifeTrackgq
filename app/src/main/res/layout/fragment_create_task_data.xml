@@ -8,10 +8,10 @@
     android:paddingHorizontal="51dp"
     android:paddingTop="24dp"
     android:background="@drawable/bottom_sheet_dialog"
-    tools:context=".CreateTaskData">
+    tools:context=".ui.CreateTaskData">
 
     <EditText
-        android:id="@+id/et_task"
+        android:id="@+id/taskEd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/rentagle_buttom"
@@ -50,6 +50,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/applyBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"

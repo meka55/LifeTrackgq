@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="310dp"
         android:layout_marginTop="98dp"
-        android:src="@color/black" />
+        android:src="@drawable/img" />
 
     <TextView
         android:id="@+id/tv_tittle_view_pager"
@@ -30,7 +30,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="66dp"
         android:background="@drawable/rentagle_buttom"
-        android:textColor="@color/white"
+        android:textColor="@color/purple"
         tools:text="Начинаем" />
 
 </LinearLayout>

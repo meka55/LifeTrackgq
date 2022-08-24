@@ -4,14 +4,19 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".ProfileFragment">
+    tools:context=".ui.ProfileFragment">
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/avatar_iv"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="71dp"
         android:layout_width="84dp"
         android:layout_height="84dp"
-        android:src="@drawable/rentagle_profile_avatar"/>
+        android:scaleType="centerCrop"
+        android:background="@drawable/rentagle_profile_avatar"
+        tools:shapeAppearanceOverlay="@style/ivStyleProfile"
+        android:src="@color/purple"/>
+
 
     <LinearLayout
         android:layout_marginTop="21dp"

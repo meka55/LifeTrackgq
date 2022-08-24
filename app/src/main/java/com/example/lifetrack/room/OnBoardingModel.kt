@@ -1,4 +1,4 @@
-package com.example.lifetrack
+package com.example.lifetrack.room
 
 data class OnBoardingModel(
     val image: Int,
