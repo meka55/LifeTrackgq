@@ -1,18 +1,20 @@
 package com.example.lifetrack.ui
 
+import android.animation.ObjectAnimator
 import android.app.AlertDialog
 import android.content.DialogInterface
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.Interpolator
+import androidx.fragment.app.Fragment
 import com.example.lifetrack.ItemListener
-import com.example.lifetrack.room.App
 import com.example.lifetrack.adapters.TaskAdapter
-import com.example.lifetrack.room.TaskModel
 import com.example.lifetrack.databinding.FragmentHomeBinding
+import com.example.lifetrack.room.App
+import com.example.lifetrack.room.TaskModel
 
 class HomeFragment : Fragment(), ItemListener {
      lateinit var binding: FragmentHomeBinding
@@ -36,9 +38,26 @@ class HomeFragment : Fragment(), ItemListener {
             binding.recyclerTask.adapter = adapter
         }
     }
+     private  fun doBounceAnimation(targetView: View) {
+         val interpolator: Interpolator = object : Interpolator{
+             override fun getInterpolation(v: Float): Float {
+                 return getPowOut(v, 2.0)
+             }
+         }
+         val animator = ObjectAnimator.ofFloat(targetView,"translationY", 0f,25f,0f)
+         animator.interpolator = interpolator
+         animator.startDelay =200
+         animator.duration = 800
+         animator.repeatCount =5
+         animator.start()
+     }
+    private  fun getPowOut(elapsedTimeRate: Float, pow: Double): Float {
+        return (1.toFloat() - Math.pow((1 - elapsedTimeRate).toDouble(), pow)).toFloat()
+    }
 
     private fun initClicker() {
         binding.btnAddTask.setOnClickListener {
+            doBounceAnimation(it)
             val dialog = CreateTaskData()
             dialog.show(requireActivity().supportFragmentManager, "")
         }

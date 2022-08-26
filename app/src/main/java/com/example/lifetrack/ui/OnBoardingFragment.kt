@@ -3,16 +3,16 @@ package com.example.lifetrack.ui
 import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.lifetrack.adapters.OnBoardingAdapter
-import com.example.lifetrack.room.OnBoardingModel
 import com.example.lifetrack.OnItemClicker
 import com.example.lifetrack.R
+import com.example.lifetrack.adapters.OnBoardingAdapter
 import com.example.lifetrack.databinding.FragmentOnBoardingBinding
+import com.example.lifetrack.room.OnBoardingModel
 
 class OnBoardingFragment : Fragment(), OnItemClicker {
 
@@ -31,12 +31,11 @@ class OnBoardingFragment : Fragment(), OnItemClicker {
         super.onViewCreated(view, savedInstanceState)
         val sharedPreferences: SharedPreferences = requireContext().getSharedPreferences("board_preferences",
             Context.MODE_PRIVATE)
+           checkIsShown(sharedPreferences)
 
-        checkIsShown(sharedPreferences)
-
-        list.add(OnBoardingModel(R.drawable.img, "Экономь время", "Дальше"))
-        list.add(OnBoardingModel(R.drawable.img_1, "Достигай целей", "Дальше"))
-        list.add(OnBoardingModel(R.drawable.img_2, "Развивайся", "Начинаем"))
+        list.add(OnBoardingModel("assets/time.json","Экономь время", "Дальше"))
+        list.add(OnBoardingModel("assets/task.json", "Достигай целей", "Дальше"))
+        list.add(OnBoardingModel("assets/multitasking.json", "Развивайся", "Начинаем"))
         binding.viewPager.adapter = OnBoardingAdapter(list, this)
         binding.dotsIndicator.attachTo(binding.viewPager)
     }

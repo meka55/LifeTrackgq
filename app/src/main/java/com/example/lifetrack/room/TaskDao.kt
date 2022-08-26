@@ -17,4 +17,3 @@ interface TaskDao {
     @Delete
     fun deleteData (taskModel: TaskModel)
 }
-
