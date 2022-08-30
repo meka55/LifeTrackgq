@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "283357455188",
+    "project_id": "lifetrack-78e1e",
+    "storage_bucket": "lifetrack-78e1e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:283357455188:android:ea9a93847cb83a06b95ec1",
+        "android_client_info": {
+          "package_name": "com.example.lifetrack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "283357455188-mc5s2sgp8vsp64mt28i0u5hpmh4vlq6m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lifetrack",
+            "certificate_hash": "e610a416311bfdb0ff5d849b6f1124a75d8ae4cc"
+          }
+        },
+        {
+          "client_id": "283357455188-r10o94ojidi8nsg5rfnoum0aboi5pu72.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGJrS2IqHsBYkjRaljy0QnPGJPNUUInTo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "283357455188-r10o94ojidi8nsg5rfnoum0aboi5pu72.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

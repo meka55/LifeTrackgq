@@ -12,9 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="310dp"
         android:layout_marginTop="98dp"
-        app:lottie_fileName="time.json"
         app:lottie_autoPlay="true"
-        app:lottie_url="REPLACE_JSON_URL"
         app:lottie_loop="true"/>
 
     <TextView

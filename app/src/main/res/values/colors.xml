@@ -8,4 +8,6 @@
     <color name="purple">#6C70D5</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="figma">#6C70D5</color>
+    <color name="proz">#00ffffff</color>
 </resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/lapm"
+    tools:context=".ui.CodeFragment">
+
+    <ImageView
+        android:id="@+id/threeIv"
+        android:layout_width="882dp"
+        android:layout_height="347dp"
+        android:src="@drawable/three"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.004" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/fire"
+        app:layout_constraintBottom_toBottomOf="@+id/threeIv"
+        app:layout_constraintEnd_toStartOf="@+id/lifetrackTv"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/lifetrackTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LifeTrack"
+        android:textColor="@color/white"
+        android:textSize="48dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginEnd="53dp"
+        app:layout_constraintBottom_toBottomOf="@+id/threeIv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Введите код"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/naborCode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.209"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/naborCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="51dp"
+        android:background="@drawable/prozrachnyi"
+        android:hint="48393"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="123dp"
+        android:padding="12dp"/>
+    <Button
+        android:id="@+id/prinyatBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/rentagle_buttom"
+        android:backgroundTint="@color/figma"
+        android:text="Принять"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.647"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/threeIv"
+        app:layout_constraintVertical_bias="0.788" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
