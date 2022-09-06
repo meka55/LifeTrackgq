@@ -33,6 +33,7 @@ class OnBoardingFragment : Fragment(), OnItemClicker {
             Context.MODE_PRIVATE)
            checkIsShown(sharedPreferences)
 
+
         list.add(OnBoardingModel("anima/time.json","Экономь время", "Дальше"))
         list.add(OnBoardingModel("anima/task.json", "Достигай целей", "Дальше"))
         list.add(OnBoardingModel("anima/multitasking.json", "Развивайся", "Начинаем"))

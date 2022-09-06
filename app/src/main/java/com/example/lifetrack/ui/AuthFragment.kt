@@ -8,15 +8,17 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.lifetrack.R
 import com.example.lifetrack.databinding.FragmentAuthBinding
+import com.google.firebase.auth.FirebaseAuth
 
 class AuthFragment : Fragment() {
    private val binding = lazy { FragmentAuthBinding.inflate(layoutInflater) }
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreateView(
 
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View?{
+    ): View{
         return binding.value.root
 
     }
@@ -31,4 +33,6 @@ class AuthFragment : Fragment() {
             findNavController().navigate(R.id.phoneNumberFragment)
         }
     }
+
+
 }

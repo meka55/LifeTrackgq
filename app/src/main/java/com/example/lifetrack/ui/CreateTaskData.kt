@@ -11,17 +11,18 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.Window
 import androidx.navigation.fragment.findNavController
-import com.example.lifetrack.room.App
 import com.example.lifetrack.R
-import com.example.lifetrack.room.TaskModel
 import com.example.lifetrack.databinding.DialogRegularBinding
 import com.example.lifetrack.databinding.FragmentCreateTaskDataBinding
+import com.example.lifetrack.room.App
+import com.example.lifetrack.room.TaskModel
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
 class CreateTaskData : BottomSheetDialogFragment() {
 
     private lateinit var binding: FragmentCreateTaskDataBinding
     var taskModel: TaskModel? = null
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

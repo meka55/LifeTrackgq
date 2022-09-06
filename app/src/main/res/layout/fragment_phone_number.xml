@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/lapm"
-    tools:context=".ui.PhoneNumberFragment">
+    tools:context=".ui.PhoneFragment">
 
     <ImageView
         android:id="@+id/twoIv"

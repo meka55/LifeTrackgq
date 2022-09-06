@@ -40,6 +40,8 @@ class PhoneFragment : Fragment() {
         auth = Firebase.auth
         initClicker()
 
+        checkUser()
+
         callbacks = object : PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
 
             override fun onVerificationCompleted(credential: PhoneAuthCredential) {
@@ -109,5 +111,10 @@ class PhoneFragment : Fragment() {
         private const val TAG = "PhoneAuthActivity"
     }
 
-
+    private fun checkUser(){
+        val firebaseUser = auth.currentUser
+        if (firebaseUser != null) {
+            findNavController().navigate(R.id.homeFragment)
+        }
+    }
 }
